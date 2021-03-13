@@ -1,0 +1,201 @@
+:root {
+  /* Semantic Colors */
+  --primary: #18a968;
+  --success: ##42BA32;
+  --info:#3059FF;
+  --warning:#EADF15;
+  --danger:#D82929;
+  --text:#212121;
+  /* Typography */
+  --Heading1: 2.25rem;
+  --Heading2: 1.875rem;
+  --Heading3: 1.5rem;
+  --Heading4: 1.25rem;
+  --Heading5: 1.125rem;
+  --Heading6: 1rem;
+  --Heading6: 1rem;
+  --Body1: 1rem;
+  --Subtitle1: 1rem;
+  --Subtitle2: 0.875rem;
+  --Button: 0.875rem;
+  --Caption: 0.75rem;
+  --Overline: 0.625rem;
+  /* Typography / Line Height */
+  --LeadingLoose: 1.625;
+  /* Spacinig */
+  --SpacingBSmall: 0 0 2rem 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan", sans-serif;
+}
+h1 {
+  font-size: var(--Heading1);
+  line-height: var(--LeadingLoose);
+}
+h2{
+  font-size: var(--Heading2);
+  line-height: var(--LeadingLoose);
+}
+h3 {
+  font-size: var(--Heading3);
+  line-height: var(--LeadingLoose);
+}
+h4 {
+  font-size: var(--Heading4);
+  line-height: var(--LeadingLoose);
+}
+h5 {
+  font-size: var(--Heading5);
+  line-height: var(--LeadingLoose);
+}
+h6 {
+  font-size: var(--Heading6);
+  letter-spacing: 1.6;
+  line-height: var(--LeadingLoose);
+}
+p {
+  color: var(--text);
+  margin: 0.875rem 0rem;
+  line-height: var(--LeadingLoose);
+  font-size: var(--Body1);
+}
+a {
+  color: var(--info);
+  text-decoration: none;
+}
+caption {
+  font-size: var(--Caption);
+}
+sub, sup {
+  font-size: var(--Overline);
+}
+li {
+  list-style-position: inside;
+  line-height: var(--LeadingLoose);
+}
+
+.button {
+  padding: 0.75rem;
+  letter-spacing: 0.05em;
+  font-size: var(--Subtitle2);
+  background: white;
+  border: 2px solid #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.button-outline {
+  font-weight: 500;
+  padding: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: var(--Subtitle2);
+  color: white;
+  background: transparent;
+  border: 2px solid #fff;
+}
+.main-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  padding: 4rem 0rem;
+  margin: var(--SpacingBSmall);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: var(--primary);
+}
+.main-banner .container {
+  width: 90%;
+  margin: 0rem auto;
+}
+.main-banner h1 {
+  color: white;
+}
+.main-banner h2 {
+  color: white;
+}
+.main-banner p {
+  color: white;
+}
+.page-wrapper {
+  width: 90%;
+  margin: 0rem auto;
+}
+.extra {
+  margin: 2rem 0 0 0;
+  border-top: 1px solid #afafaf;
+  padding: 1rem 0rem;
+}
+.extra-item-02 ul li {
+  text-decoration: none;
+  display: block;
+}
+@media (min-width: 640px) { 
+  .page-wrapper {
+    width: 80%;
+    margin: 0rem auto;
+  }
+  .main-banner .container {
+    width: 80%;
+    margin: 0rem auto;
+  }
+  .extra {
+    margin: 2rem 0 0 0;
+    border-top: 1px solid #afafaf;
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .extra-item-02 {
+    display: inline-block;
+  }
+  .extra-item-02 ul {
+    margin: 0rem;
+    padding: 0rem;
+  }
+  .extra-item-02 ul li {
+    text-decoration: none;
+    display: inline-block;
+  }
+}
+@media (min-width: 1024px) { 
+  .page-wrapper {
+    width: 60%;
+    margin: 0rem auto;
+  }
+  .main-banner .container {
+    width: 60%;
+    margin: 0rem auto;
+  }
+}
+@media (min-width: 1536px) { 
+  .page-wrapper {
+    width: 60%;
+    margin: 0rem auto;
+  }
+  h1 {
+    font-size: calc(var(--Heading1) * 1.125);
+  }
+  h2 {
+    font-size: calc(var(--Heading2) * 1.125);
+  }
+  h3 {
+    font-size: calc(var(--Heading3) * 1.125);
+  }
+  h4 {
+    font-size: calc(var(--Heading4) * 1.125);
+  }
+  h5 {
+    font-size: calc(var(--Heading5) * 1.125);
+  }
+  h6 {
+    font-size: calc(var(--Heading6) * 1.125);
+  }
+  p {
+    font-size: calc(var(--Body1) * 1.125);
+  }
+}
