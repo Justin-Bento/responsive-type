@@ -27,7 +27,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "League Spartan", sans-serif;
+  font-family: 'Public Sans', sans-serif;
 }
 h1 {
   font-size: var(--Heading1);
@@ -51,7 +51,6 @@ h5 {
 }
 h6 {
   font-size: var(--Heading6);
-  letter-spacing: 1.6;
   line-height: var(--LeadingLoose);
 }
 p {
@@ -77,7 +76,6 @@ li {
 
 .button {
   padding: 0.75rem;
-  letter-spacing: 0.05em;
   font-size: var(--Subtitle2);
   background: white;
   border: 2px solid #fff;
@@ -87,7 +85,6 @@ li {
 .button-outline {
   font-weight: 500;
   padding: 0.75rem;
-  letter-spacing: 0.05em;
   text-transform: uppercase;
   font-size: var(--Subtitle2);
   color: white;
